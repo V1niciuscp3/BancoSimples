@@ -1,0 +1,10 @@
+CREATE TABLE usuario(
+    id BIGSERIAL PRIMARY KEY,
+    nome TEXT NOT NULL,
+    CPF VARCHAR(11) NOT NULL,
+    email TEXT NOT NULL,
+    senha TEXT NOT NULL,
+    endereco TEXT NOT NULL,
+    cep VARCHAR(8) NOT NULL,
+    contaativa BOOLEAN NOT NULL DEFAULT TRUE
+);
